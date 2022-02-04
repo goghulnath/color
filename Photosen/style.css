@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background: black;
+    color: #777;
+}
+
+header {
+    margin: 25px 0 30px;
+    font-weight: bold;
+}
+
+nav a {
+    all: unset;
+    padding: 0 13px;
+    cursor: pointer;
+}
+
+nav div:not(:first-child) {
+    line-height: 3rem;
+    display: inline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav #logo {
+    font-size: 2rem;
+    color: whitesmoke;
+    padding-top: 8px;
+}
+
+nav #nav-links {
+    font-size: 12px;
+    letter-spacing: 0.10rem;
+    margin-left: 4rem;
+}
+
+nav #nav-links a:first-child {
+    color: #1ea13a;
+}
+
+nav #nav-links a:hover {
+    color: #1ea13a;
+}
+
+nav #media-links a:hover {
+    color: whitesmoke;
+}
+
+
+/* --------------------- */
+
+
+/*         MAIN  */
+
+
+/* ---------------------  */
+
+#section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+@media (max-width:1200px) {
+    #section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #section .container {
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
+
+#section .container {
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    transition: all 200ms ease-in-out;
+    transform: rotateX(10deg) rotateY(30deg);
+}
+
+#section .container:hover {
+    transform: scale(0.9) rotateX(0deg) rotateY(0deg);
+}
+
+#section .container #title {
+    text-align: center;
+}
+
+#section .container #title h4 {
+    all: unset;
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 25px;
+}
+
+#section .container #title button {
+    all: unset;
+    border: 1px solid white;
+    padding: 12px 1.5rem 14px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+#section .container #title button:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+.container.item1 {
+    background: linear-gradient(45deg, rgba(197, 22, 22, 0.5), black), url("images/item1.webp");
+}
+
+.container.item2 {
+    background: linear-gradient(45deg, rgba(28, 197, 22, 0.5), black), url("images/item2.webp");
+}
+
+.container.item3 {
+    background: linear-gradient(45deg, rgba(22, 34, 197, 0.5), black), url("images/item3.webp");
+}
+
+.container.item4 {
+    background: linear-gradient(45deg, rgba(197, 185, 22, 0.5), black), url("images/item4.webp");
+}
+
+.container.item5 {
+    background: linear-gradient(45deg, rgba(22, 156, 197, 0.5), black), url("images/item5.webp");
+}
+
+.container.item6 {
+    background: linear-gradient(45deg, rgba(22, 89, 197, 0.5), black), url("images/item6.webp");
+}
+
+.container.item7 {
+    background: linear-gradient(45deg, rgba(197, 194, 22, 0.5), black), url("images/item2.webp");
+}
+
+.container.item8 {
+    background: linear-gradient(45deg, rgba(197, 22, 174, 0.5), black), url("images/item1.webp");
+}
+
+.container.item9 {
+    background: linear-gradient(45deg, rgba(197, 130, 22, 0.5), black), url("images/item3.webp");
+}
+
+footer {
+    min-height: 100px;
+    display: grid;
+    place-items: center;
+}
+
+footer a {
+    all: unset;
+    color: #1ea13a;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: #117026;
+}
